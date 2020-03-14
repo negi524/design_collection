@@ -18,12 +18,7 @@ export default {
   },
   data() {
     return {
-      pages: [
-        {
-          text: 'Home',
-          href: '/'
-        }
-      ]
+      pages: [{ text: 'Home', href: '/' }]
     }
   }
 }

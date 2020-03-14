@@ -22,14 +22,8 @@ export default {
   data() {
     return {
       crumbs: [
-        {
-          text: 'Home',
-          href: '/'
-        },
-        {
-          text: 'Buttons',
-          href: '/buttons'
-        }
+        { text: 'Home', href: '/' },
+        { text: 'Buttons', href: '/buttons' }
       ]
     }
   }
