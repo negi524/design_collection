@@ -3,13 +3,18 @@
     <!-- <b-breadcrumb :items="crumbs" /> -->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li
-          v-for="item in crumbs"
-          :key="item.text"
-          class="breadcrumb-item text-secondary"
-        >
-          <nuxt-link :to="item.href">{{ item.text }}</nuxt-link>
-        </li>
+        <template v-for="(item, index) in crumbs">
+          <li
+            v-if="index === crumbs.length - 1"
+            :key="item.text"
+            class="breadcrumb-item text-secondary"
+          >
+            {{ item.text }}
+          </li>
+          <li v-else :key="item.text" class="breadcrumb-item text-secondary">
+            <nuxt-link :to="item.href">{{ item.text }}</nuxt-link>
+          </li>
+        </template>
       </ol>
     </nav>
   </div>
