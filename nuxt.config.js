@@ -7,6 +7,10 @@ module.exports = {
    ** Headers of the page
    */
   head: {
+    base: {
+      // GitHub Pages のサブディレクトリで運用するため
+      href: 'router.base'
+    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
