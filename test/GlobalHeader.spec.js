@@ -7,18 +7,12 @@ describe('GlobalHeader', () => {
       // propsをセット
       propsData: {
         crumbs: [
-          {
-            text: 'Home',
-            href: '/'
-          },
-          {
-            text: 'Buttons',
-            href: '/buttons'
-          }
+          { text: 'Home', href: '/' },
+          { text: 'Buttons', href: '/buttons' }
         ]
       },
-      // Bootstrapのコンポーネントをスタブ化する
-      stubs: ['b-breadcrumb']
+      // nuxt-linkタグをスタブ化
+      stubs: ['nuxt-link']
     })
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
