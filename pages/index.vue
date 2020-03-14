@@ -3,7 +3,7 @@
     <global-header :crumbs="pages" />
     <main class="my-3 mx-auto">
       <ul>
-        <li><a href="/buttons">Button Page</a></li>
+        <li><nuxt-link to="/buttons">Button Page</nuxt-link></li>
       </ul>
     </main>
   </div>
