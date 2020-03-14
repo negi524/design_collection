@@ -1,3 +1,16 @@
+// GitHubPagesに後悔するための設定
+const routeBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/design_collection'
+        }
+      }
+    : {}
+export default {
+  ...routeBase
+}
+
 module.exports = {
   mode: 'spa',
   /*
