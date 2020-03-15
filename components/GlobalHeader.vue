@@ -8,6 +8,7 @@
             v-if="index === crumbs.length - 1"
             :key="item.text"
             class="breadcrumb-item text-secondary"
+            aria-current="page"
           >
             {{ item.text }}
           </li>
