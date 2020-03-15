@@ -1,9 +1,16 @@
 module.exports = {
   mode: 'spa',
+  router: {
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/design_collection/' : '/'
+  },
   /*
    ** Headers of the page
    */
   head: {
+    base: {
+      // GitHub Pages のサブディレクトリで運用するため
+      href: 'router.base'
+    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
