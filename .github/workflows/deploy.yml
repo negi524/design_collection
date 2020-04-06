@@ -1,0 +1,70 @@
+name: Deploy GitHub Pages
+
+# masterブランチへのpushをトリガーとして実行
+on:
+  push:
+    branches: [master]
+# on: [push]
+
+jobs:
+  # 製品のテストを実施
+  test:
+    name: 'Test product'
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # 作業用の環境を整える
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # 必要なパッケージ群をインストールする
+      - name: Install packages
+        run: npm ci
+
+      # テスト実施
+      - name: Test
+        run: npm run test
+
+  # テスト完了後、リリースを実施
+  deploy:
+    name: 'Deploy product'
+    needs: [test]
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # 作業用の環境を整える
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # 必要なパッケージ群をインストールする
+      - name: Install packages
+        run: npm ci
+
+      # GitHub Pages用のファイルを生成する
+      - name: Generate product
+        run: npm run generate
+        env:
+          DEPLOY_ENV: GH_PAGES
+
+      # dist配下に生成されたファイルをGitHub Pagesにデプロイする
+      - name: Deploy GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./dist

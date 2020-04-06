@@ -1,0 +1,35 @@
+name: Test Before Merge
+
+# masterブランチに対するPRをトリガーとして実行
+on:
+  pull_request:
+    branches:
+      - master
+# on: [push]
+
+jobs:
+  # 製品のテストを実施
+  test:
+    name: 'Test product'
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # 作業用の環境を整える
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # 必要なパッケージ群をインストールする
+      - name: Install packages
+        run: npm ci
+
+      # テスト実施
+      - name: Test
+        run: npm run test
