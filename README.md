@@ -20,13 +20,3 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-## Deploy GitHub Pages
-
-```bash
-# generate static project for GitHub Pages
-$ npm run generate:gh-pages
-
-# deploy
-$ npm run deploy
-```
