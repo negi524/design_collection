@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="cherryBlossoms" class="container">
     <global-header :crumbs="crumbs" />
   </div>
 </template>

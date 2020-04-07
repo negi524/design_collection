@@ -4,6 +4,9 @@
     <main class="my-3 mx-auto">
       <ul>
         <li><nuxt-link to="/buttons">Button Page</nuxt-link></li>
+        <li>
+          <nuxt-link to="/cherryblossoms">Cherry Blossoms Page</nuxt-link>
+        </li>
       </ul>
     </main>
   </div>

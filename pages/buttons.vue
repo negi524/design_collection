@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div id="buttons" class="container">
     <global-header :crumbs="crumbs" />
     <h2 class="p-2 text-success">Button List</h2>
     <div class="container my-3">
