@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <!-- <b-breadcrumb :items="crumbs" /> -->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <template v-for="(item, index) in crumbs">
@@ -24,6 +23,7 @@
 <script>
 export default {
   props: {
+    // パンくずリストの情報を配列で受け取り
     crumbs: {
       type: Array,
       required: true
