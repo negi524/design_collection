@@ -21,7 +21,16 @@ module.exports = {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href:
+          process.env.DEPLOY_ENV === 'GH_PAGES'
+            ? '/design_collection/favicon.ico'
+            : '/favicon.ico'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -34,7 +43,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~plugins/particles.js'],
   /*
    ** Nuxt.js dev-modules
    */
