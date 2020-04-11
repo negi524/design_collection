@@ -1,1 +1,1 @@
-import particlesJS from 'particles.js'
+// import particlesJS from 'particles.js'

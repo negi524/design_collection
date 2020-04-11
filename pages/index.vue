@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
+  <div class="container mt-5">
     <global-header :crumbs="pages" />
     <main class="my-3 mx-auto">
       <ul>
         <li><nuxt-link to="/buttons">Button Page</nuxt-link></li>
         <li>
-          <nuxt-link to="/cherryblossoms">Cherry Blossoms Page</nuxt-link>
+          <nuxt-link to="/snowfall">Snow Fall</nuxt-link>
         </li>
       </ul>
     </main>
