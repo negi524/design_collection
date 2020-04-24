@@ -7,6 +7,7 @@ import particlesJS from 'particles.js'
 import snowData from '~/assets/snow.json'
 
 export default {
+  layout: 'onepage',
   data() {
     return {
       snow: snowData
