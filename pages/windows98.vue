@@ -4,7 +4,7 @@
       <div class="col-3">
         <ul class="tree-view">
           <li>
-            home
+            <nuxt-link to="/">Home</nuxt-link>
             <ul>
               <li><nuxt-link to="/buttons">Button Page</nuxt-link></li>
               <li><nuxt-link to="/snowfall">Snow Fall</nuxt-link></li>
