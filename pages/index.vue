@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5">
+  <div>
     <global-header :crumbs="pages" />
     <main class="my-3 mx-auto">
       <ul>
