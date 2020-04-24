@@ -7,6 +7,7 @@
         <li>
           <nuxt-link to="/snowfall">Snow Fall</nuxt-link>
         </li>
+        <li><nuxt-link to="/windows98">windows98 Page</nuxt-link></li>
       </ul>
     </main>
   </div>
