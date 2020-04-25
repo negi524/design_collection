@@ -27,15 +27,5 @@ $ npm run generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-## Deploy GitHub Pages
-
-```bash
-# generate static project for GitHub Pages
-$ npm run generate:gh-pages
-
-# deploy
-$ npm run deploy
-```
-
 [particles.js]: (https://github.com/VincentGarreau/particles.js/)
 [98.css]: (https://github.com/jdan/98.css)
