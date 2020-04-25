@@ -1,13 +1,13 @@
 <template>
   <div>
-    <global-header :crumbs="pages" />
+    <global-header :crumbs="crumbs" />
     <main class="my-3 mx-auto">
       <ul>
-        <li><nuxt-link to="/buttons">Button Page</nuxt-link></li>
+        <li><nuxt-link to="/buttons">Buttons</nuxt-link></li>
         <li>
           <nuxt-link to="/snowfall">Snow Fall</nuxt-link>
         </li>
-        <li><nuxt-link to="/windows98">windows98 Page</nuxt-link></li>
+        <li><nuxt-link to="/windows98">windows98</nuxt-link></li>
       </ul>
     </main>
   </div>
@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      pages: [{ text: 'Home', href: '/' }]
+      crumbs: [{ text: 'Home', href: '/' }]
     }
   }
 }

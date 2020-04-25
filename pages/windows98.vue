@@ -6,7 +6,7 @@
           <li>
             <nuxt-link to="/">Home</nuxt-link>
             <ul>
-              <li><nuxt-link to="/buttons">Button Page</nuxt-link></li>
+              <li><nuxt-link to="/buttons">Buttons</nuxt-link></li>
               <li><nuxt-link to="/snowfall">Snow Fall</nuxt-link></li>
               <li><nuxt-link to="/windows98">Windows98</nuxt-link></li>
             </ul>
