@@ -1,8 +1,8 @@
 <template>
-  <div class="window w-98__container">
+  <div class="window w98container">
     <div class="row">
       <div class="col-md-3">
-        <ul class="tree-view">
+        <ul class="tree-view h-100">
           <li>
             <nuxt-link to="/">Home</nuxt-link>
             <ul>
@@ -25,6 +25,10 @@
           </div>
           <div class="window-body">
             <p>懐かしすぎるページ</p>
+            <div class="d-flex p-1 justify-content-end w98button__group">
+              <button class="w98button__item--focused">OK</button>
+              <button class="w98button__item">Cancel</button>
+            </div>
           </div>
         </div>
       </div>
@@ -45,9 +49,17 @@ export default {
 .window {
   font-size: 14px;
 }
-.w-98 {
-  &__container {
-    height: 1000px;
+.w98container {
+  height: 1000px;
+}
+
+.w98button {
+  &__item {
+    margin: 0 6px;
+    &--focused {
+      outline: 1px dotted #000000;
+      outline-offset: -4px;
+    }
   }
 }
 </style>
