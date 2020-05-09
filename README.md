@@ -28,5 +28,5 @@ $ npm run generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-[particles.js]: (https://github.com/VincentGarreau/particles.js/)
-[98.css]: (https://github.com/jdan/98.css)
+[particles.js]: https://github.com/VincentGarreau/particles.js/
+[98.css]: https://github.com/jdan/98.css
