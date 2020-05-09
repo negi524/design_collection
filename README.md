@@ -4,6 +4,7 @@
 
 自分が良いなと思ったデザインを集めておくページです。
 
+- Headings : 見出しデザインのリスト
 - Buttons : ボタンデザインのリスト
 - Snow Fall : 雪が降る JavaScript([particles.js])
 - Windows98 : windows98 のようなデザイン([98.css])
