@@ -14,6 +14,9 @@
         <li>
           CSSが読み込まれなかった場合、imgタグに指定したwidth,heightで表示される
         </li>
+        <li>
+          画像の<code>width</code>,<code>height</code>を指定しておくと、画像読み込み遅延によるカクカクがなくなる
+        </li>
       </ul>
     </section>
     <section class="description__howto">
