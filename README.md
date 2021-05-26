@@ -8,6 +8,7 @@
 - Buttons : ボタンデザインのリスト
 - Snow Fall : 雪が降る JavaScript([particles.js])
 - Windows98 : windows98 のようなデザイン([98.css])
+- Image Tag : `img`タグのサイズ調整について記載したページ
 
 ## Build Setup
 
