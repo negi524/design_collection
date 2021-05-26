@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'spa',
+  ssr: false,
   router: {
     base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/design_collection/' : '/'
   },
