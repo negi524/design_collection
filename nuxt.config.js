@@ -1,5 +1,7 @@
 module.exports = {
+  target: 'static',
   ssr: false,
+  telemetry: false,
   router: {
     base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/design_collection/' : '/'
   },
