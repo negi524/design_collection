@@ -14,6 +14,5 @@ describe('GlobalHeader', () => {
       // nuxt-linkタグをスタブ化
       stubs: ['nuxt-link']
     })
-    expect(wrapper.isVueInstance()).toBeTruthy()
   })
 })
